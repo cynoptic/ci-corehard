@@ -9,7 +9,6 @@ class HelloConan(ConanFile):
     description = "Demo CI/CD workshop project"
     settings = "os", "compiler", "build_type", "arch"
     generators = "cmake"
-    requires = "gtest/1.8.1@bincrafters/stable"
     exports_sources = [
         "include/*",
         "src/*",
